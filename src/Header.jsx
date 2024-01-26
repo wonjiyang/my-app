@@ -1,19 +1,18 @@
 import styled from "styled-components";
 import Nav from "./Nav";
 
-function Header() {
+function Header({ nav, logo }) {
     return (
     <Hd>
-        header
-        <Nav />
+        <h1> {logo}</h1>
+        <Nav nav={nav} />
     </Hd>
     );
 }
-
   
 const Hd = styled.div`
 height: 100px;
-background-color: #000000;
+background-color: #999999;
 `;
 
 export default Header;
