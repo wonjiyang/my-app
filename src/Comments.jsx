@@ -14,19 +14,29 @@ const Comments = () => {
     const commentArr = [
         {
             user: userArr[0],
-            text: '봄이 왔다.',
-            date: '2024.01.27'
+            text: '겨울이 왔다.',
+            date: '2024.12.27'
+        },
+        {
+            user: userArr[1],
+            text: '가을이 왔다.',
+            date: '2024.10.29'
         },
         {
             user: userArr[1],
             text: '봄이 왔다.',
-            date: '2024.01.27'
+            date: '2024.02.30'
+        },
+        {
+            user: userArr[1],
+            text: '여름이 왔다.',
+            date: '2024.06.30'
         },
     ]
     return (
         <>
         {commentArr.map((item, index) => (
-            <Comment key={index} />
+            <Comment key={index} data={item} />
         ))}
         </>
     )

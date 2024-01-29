@@ -4,6 +4,7 @@ import Header from "./Header";
 import  { NavMobile } from "./Nav";
 import Sort from "./Sort";
 import Comments from "./Comments";
+import Product from "./Product";
 
 export default function Layout() {
   // return 내부에는 하나의 태그만 존재
@@ -13,10 +14,11 @@ export default function Layout() {
 
   return (
   <div className="wrap">
-    <Sort />
     <Header logo= '가을' nav= {navD} />
     <NavMobile nav={navArr} />
+    <Sort />
     <Comments />
+    <Product />
     <Article title="html이란?" desc="html이란 뭐뭐다."/>
     <Article title="css이란?" desc="css이란 뭐뭐다."/>
     <Article title="js이란?" desc="js이란 뭐뭐다."/>

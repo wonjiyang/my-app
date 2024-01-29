@@ -1,10 +1,14 @@
-const Comment = () => {
+import User from "./User"
+
+const Comment = (props) => {
+    const {user, text, date} = props.data
+    console.log(`props : ${props}`)
+    console.log(`props.data : ${props.data}`)
     return (
         <div className="comment">
-            <img src="https://assets.chatgpt4google.com/assets/promo/43.gif" alt="" />
-            <strong>겨울이</strong>
-            <p>봄이 왔다.</p>
-            <time>2024.01.26</time>
+            <User user={user} />
+            <p>{text}</p>
+            <time>{date}</time>
         </div>
     )
 }
