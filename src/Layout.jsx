@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import  { NavMobile } from "./Nav";
 import Sort from "./Sort";
-// import Comments from "./Comments";
+import Comments from "./Comments";
 import Product from "./Product";
 
 export default function Layout() {
@@ -17,7 +17,7 @@ export default function Layout() {
     <Header logo= '가을' nav= {navD} />
     <NavMobile nav={navArr} />
     <Sort />
-    {/* <Comments /> */}
+    <Comments />
     <Product />
     <Article title="html이란?" desc="html이란 뭐뭐다."/>
     <Article title="css이란?" desc="css이란 뭐뭐다."/>

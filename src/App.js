@@ -1,17 +1,23 @@
-// import Comment from "./Comments";
+import Comment from "./Comments";
 import Layout from "./Layout";
 import Product from "./Product";
 import Sort from "./Sort";
 import Event from "./Event";
+import SetNumber from "./SetNumber";
+import State from "./State";
+import Sort2 from "./Sort2";
 
 export default function App() {
     // return 내부에는 하나의 태그만 존재
     // 여러 태그를 사용하고 싶다면 (<> </>)를 사용한다.
     return (
     <>
+        <Sort2 />
+        <SetNumber />
+        <State />
         <Event />
         <Product />
-        {/* <Comment /> */}
+        <Comment />
         <Sort />
 
         {/* 부모 컨포넌트 */}
