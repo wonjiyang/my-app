@@ -6,12 +6,14 @@ import Event from "./Event";
 import SetNumber from "./SetNumber";
 import State from "./State";
 import Sort2 from "./Sort2";
+import Switch from "./Switch";
 
 export default function App() {
     // return 내부에는 하나의 태그만 존재
     // 여러 태그를 사용하고 싶다면 (<> </>)를 사용한다.
     return (
     <>
+        <Switch />
         <Sort2 />
         <SetNumber />
         <State />
